@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakaria Abdellioua</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Custom CSS -->
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f7fb;
+        color: #333;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .section {
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 20px;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Header Styles */
+      header {
+        background-color: #232323;
+        color: #fff;
+        padding: 40px 0;
+      }
+
+      #main-nav .nav-links a {
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      #main-nav .nav-links a:hover {
+        color: #ff6347;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+      }
+
+      .profile-image {
+        border-radius: 50%;
+        max-width: 250px;
+        margin-right: 40px;
+      }
+
+      /* About Section */
+      .about .about-text {
+        padding: 20px;
+      }
+
+      /* Services Section */
+      .services .card-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 45%;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .card h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+
+      /* Work Section */
+      .work .project-card img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      /* Contact Section */
+      .contact .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .card-wrapper .card {
+        width: 30%;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .profile-image {
+          max-width: 200px;
+        }
+
+        .card-wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card {
+          width: 80%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="site-main-wrapper">
+
+      <!-- Header / Hero Section -->
+      <header>
+        <div class="container">
+          <nav id="main-nav" class="flex">
+            <div class="nav-links">
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#work">Work</a>
+            </div>
+            <div>
+              <a href="#contact" class="btn btn-primary">Contact</a>
+            </div>
+          </nav>
+
+          <div class="hero">
+            <div>
+              <img src="./images/zakib.png" alt="Zakaria Abdellioua Photo" class="profile-image" />
+            </div>
+            <div>
+              <h1>Hello, I'm Zakaria <span>Abdellioua</span></h1>
+              <h2>A Creative <span>Flutter Developer</span></h2>
+              <a href="./assets/Zakaria_Abdellioua_CV.pdf" download class="btn btn-secondary">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container">
+          <h1>About <span>Me</span></h1>
+          <h3>Hi! I’m Zakaria Abdellioua</h3>
+          <p>
+            I’m a passionate and motivated software developer specializing in cross-platform mobile app development with Flutter. 
+            I focus on building high-performance, user-centric applications that integrate seamlessly with Firebase.
+            I write clean, maintainable code and deliver intuitive interfaces and robust functionality.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <div class="container">
+          <h1>My <span>Services</span></h1>
+          <p>I build modern, scalable applications tailored to your business needs.</p>
+          <div class="card-wrapper">
+            <div class="card">
+              <h2>Mobile App Development</h2>
+              <p>
+                I create high-quality, cross-platform mobile apps using Flutter. From sleek UI design to full backend integration with
+                Firebase, I deliver fast, scalable, and user-friendly solutions.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Desktop App Development</h2>
+              <p>
+                I develop efficient and reliable desktop applications with responsive UI and modern design. Whether it's local or cloud-based,
+                I tailor solutions to optimize your business workflow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects / Work Section -->
+      <section id="work" class="work section">
+        <div class="container">
+          <h1>My <span>Projects</span></h1>
+          <p>I design clean and efficient mobile applications that solve real business problems.</p>
+          <div class="card-wrapper">
+            <div class="card project-card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+              </div>
+              <img src="./images/iprotect.png" alt="iProtect Project Preview" />
+              <div class="description">
+                <p>
+                  iProtect is a security solution designed to provide real-time protection and security services.
+                  The project includes advanced features like device monitoring, anti-theft functionalities, and secure cloud storage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <h1>Contact Me</h1>
+          <div class="card-wrapper">
+            <div class="card">
+              <h1>Call Me</h1>
+              <h6>+213 673 257 850</h6>
+            </div>
+            <div class="card">
+              <h1>Email</h1>
+              <h6>zakariaabdellioua@gmail.com</h6>
+            </div>
+            <div class="card">
+              <h1>LinkedIn</h1>
+              <h6>Zakaria Abdellioua</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
